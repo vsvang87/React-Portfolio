@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-lightGray: #eceaea;
+  --clr-darkGray: #233142;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--clr-darkGray);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: min(80%, 90rem);
+  margin-inline: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*------------------Navbar Component---------------------*/
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu li {
+  list-style-type: none;
+  margin: 2rem 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50px 50px;
+  transition: 0.2s ease-in-out;
+}
+.nav-menu li:hover {
+  background: var(--clr-lightGray);
+}
+
+/*------------Section 1 Component----------------------*/
+
+.padding {
+  padding: 0.5rem 0 0 0;
+}
+
+/*-------------Project 1 Component---------------*/
+.project-section::before {
+  content: "Project";
+  display: block;
+  background: var(--clr-darkGray);
+  height: 2px;
+  width: min(80%, 90rem);
+  margin-inline: auto;
+}
+.project-section::after {
+  content: "";
+  display: block;
+  background: var(--clr-darkGray);
+  height: 2px;
+  width: min(80%, 90rem);
+  margin-inline: auto;
+}
+.center-content {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  min-height: 50vh;
+  padding: 5rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.project-col {
+  width: 50%;
 }
+.title {
+  font-weight: 550;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.project-img img {
+  width: 100%;
+}
+.stacks {
+  margin-bottom: 1.5rem;
+}
+.stacks {
+  font-size: 1.5rem;
+}
+.buttons a {
+  text-decoration: none;
+  padding: 0.5rem;
+  background: var(--clr-darkGray);
+  color: #fff;
+  margin-right: 1rem;
+}
+.description {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+/*-------------Project 2 Component---------------*/
